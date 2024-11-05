@@ -1,0 +1,9 @@
+export { default as Header } from "./Header/Header";
+export { default as Footer } from "./Footer/Footer";
+export { default as Main } from "./Main/Main";
+export { default as Shop } from "./Shop/Shop";
+export { default as AboutUs } from "./AboutUs/AboutUs";
+export { default as ContactUs } from "./ContactUs/ContactUs";
+export { default as ServiceItem } from "./Service/Service";
+export { default as ItemProduct } from "./ItemProduct/ItemProduct";
+export { default as ProductInfo } from "./ProductInfo/ProductInfo";

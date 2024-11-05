@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Montserrat "Sans-serif", monospace;
+}
+*,
+ul,
+ol,
+li,
+p {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1360px;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.section_title {
+  text-align: center;
+  margin: 100px 0;
+}
+
+.section_title .title {
+  font-family: "Poppins", Sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 68px;
+  letter-spacing: -1.7px;
+  color: #000;
+}
+
+@media (max-width: 300px) {
+  .section_title .title {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+.section_title .description {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  color: rgba(0, 0, 0, 0.6);
+}

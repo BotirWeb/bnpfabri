@@ -1,0 +1,110 @@
+.contact {
+  margin: 40px 0;
+}
+@media (max-width: 450px) {
+  .contact {
+    margin: 20px 0;
+  }
+}
+.contact .container {
+  padding: 20px;
+}
+.contact .container .contact_top {
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 600px) {
+  .contact .container .contact_top {
+    flex-wrap: wrap;
+  }
+}
+.contact .container .contact_top .contact_form {
+  width: clamp(600px, 65%, 1300px);
+}
+@media (max-width: 600px) {
+  .contact .container .contact_top .contact_form {
+    width: clamp(200px, 100%, 600px);
+    text-align: center;
+  }
+}
+.contact .container .contact_top .contact_form .contact_form_title {
+  color: #242825;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.contact .container .contact_top .contact_form input {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #e4e4e4;
+  padding: 20px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+}
+.contact .container .contact_top .contact_form textarea {
+  resize: none;
+  outline: none;
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: #e4e4e4;
+  padding: 20px;
+  border: none;
+  border-radius: 25px;
+}
+.contact .container .contact_top .contact_form button {
+  padding: 15px 60px;
+  border: none;
+  background-color: red;
+  color: #fff;
+  border-radius: 25px;
+}
+@media (max-width: 400px) {
+  .contact .container .contact_top .contact_form button {
+    padding: 15px 30px;
+  }
+}
+.contact .container .contact_top iframe {
+  width: clamp(200px, 65%, 1300px);
+  border-radius: 20px;
+}
+@media (max-width: 600px) {
+  .contact .container .contact_top iframe {
+    width: clamp(200px, 100%, 600px);
+  }
+}
+@media (max-width: 220px) {
+  .contact .container .contact_top iframe {
+    width: clamp(100px, 95%, 220px);
+  }
+}
+.contact .container .contact_bottom {
+  margin-top: 60px;
+}
+.contact .container .contact_bottom .contact_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.contact .container .contact_bottom .contact_list .contact_list_item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact .container .contact_bottom .contact_list .contact_list_item svg {
+  font-size: 40px;
+  color: red;
+}
+.contact .container .contact_bottom .contact_list .contact_list_item span,
+.contact .container .contact_bottom .contact_list .contact_list_item a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  font-family: Unbounded, sans-serif;
+  font-weight: bold;
+}/*# sourceMappingURL=ContactUs.css.map */

@@ -1,0 +1,57 @@
+.main_service {
+  padding: 4% 2% 0;
+}
+.main_service .service_wrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+@media (max-width: 998px) {
+  .main_service .service_wrapper {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 680px) {
+  .main_service .service_wrapper {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+.main_service .service_wrapper .service_item {
+  display: flex;
+  width: 310px;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 250px) {
+  .main_service .service_wrapper .service_item {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 250px) {
+  .main_service .service_wrapper .service_item img {
+    height: 30px;
+    width: 50px;
+  }
+}
+@media (max-width: 250px) {
+  .main_service .service_wrapper .service_item .service_text {
+    text-align: center;
+  }
+}
+.main_service .service_wrapper .service_item .service_text .service_title {
+  font-family: "Poppins", Sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.3px;
+}
+.main_service .service_wrapper .service_item .service_text .service_description {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: -0.5px;
+  color: #aaa;
+}/*# sourceMappingURL=Service.css.map */

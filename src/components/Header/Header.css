@@ -1,0 +1,120 @@
+header {
+  padding: 1% 2%;
+  position: relative;
+  z-index: 1000;
+  margin: 3% 0;
+  box-shadow: 0px 10px 10px 1px rgba(65, 65, 68, 0.1411764706);
+}
+@media (max-width: 450px) {
+  header {
+    margin-top: 30px;
+  }
+}
+header .container {
+  display: flex;
+}
+@media (max-width: 765px) {
+  header .container {
+    margin-bottom: 20px;
+  }
+}
+header .container .header_logo a img {
+  width: 118px;
+  height: 30px;
+}
+header .container .header_dropdown {
+  position: fixed;
+  right: 9%;
+  top: -1%;
+}
+header .container .header_dropdown button {
+  background-color: #eeeeee;
+  color: #000;
+}
+
+.dropdown-menu.show {
+  background-color: #eeeeee;
+}
+
+.header_nav ul li a.active {
+  color: blue; /* Tanlangan menyu elementi rangini o'zgartirish */
+  font-weight: bold; /* Tanlangan elementni qalin qilish */
+}
+
+.header_nav {
+  padding: 10px;
+  margin-left: 10px;
+}
+.header_nav ul {
+  display: flex;
+  gap: 20px;
+}
+.header_nav ul li {
+  list-style: none;
+}
+.header_nav ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: "Montserrat", Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 19px;
+  letter-spacing: -0.48px;
+}
+.header_nav ul li a.active {
+  color: #000;
+  font-weight: 700;
+}
+
+.header_drawer {
+  display: none;
+  position: absolute;
+  right: 2%;
+}
+@media (max-width: 765px) {
+  .header_drawer {
+    display: flex;
+  }
+}
+
+.animatsion_drawer .MuiDrawer-paper {
+  transition: transform 4s ease-in-out;
+}
+
+@media (max-width: 765px) {
+  .header_nav_temporary {
+    display: none;
+  }
+}
+
+.close_button .drawer_close {
+  color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+.close_button .drawer_close .drawer_close_inline {
+  padding: 5px;
+}
+
+.drawer_nav {
+  display: none;
+}
+@media (max-width: 992px) {
+  .drawer_nav {
+    display: flex;
+  }
+}
+.drawer_nav ul {
+  flex-direction: column;
+}
+.drawer_nav ul li {
+  text-align: center;
+}
+.drawer_nav ul li a {
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 50px;
+  letter-spacing: 3px;
+}/*# sourceMappingURL=Header.css.map */

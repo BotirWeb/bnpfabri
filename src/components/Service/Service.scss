@@ -1,0 +1,62 @@
+// SERVICE START
+.main_service {
+  padding: 4% 2% 0;
+
+  .service_wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+
+    @media (max-width: 998px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 680px) {
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .service_item {
+      display: flex;
+      width: 310px;
+      align-items: center;
+      gap: 20px;
+
+      @media (max-width: 250px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      img {
+        @media (max-width: 250px) {
+          height: 30px;
+          width: 50px;
+        }
+      }
+
+      .service_text {
+        @media (max-width: 250px) {
+          text-align: center;
+        }
+
+        .service_title {
+          font-family: "Poppins", Sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 25px;
+          letter-spacing: -0.3px;
+        }
+
+        .service_description {
+          font-family: "Montserrat", Sans-serif;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 19px;
+          letter-spacing: -0.5px;
+          color: #aaa;
+        }
+      }
+    }
+  }
+}
+// SERVICE END

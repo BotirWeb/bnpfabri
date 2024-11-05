@@ -1,0 +1,142 @@
+header {
+  padding: 1% 2%;
+  position: relative;
+  z-index: 1000;
+  margin: 3% 0;
+  box-shadow: 0px 10px 10px 1px #41414424;
+
+  @media (max-width: 450px) {
+    margin-top: 30px;
+  }
+
+  .container {
+    display: flex;
+
+    @media (max-width: 765px) {
+      margin-bottom: 20px;
+    }
+
+    .header_logo {
+      a {
+        img {
+          width: 118px;
+          height: 30px;
+        }
+      }
+    }
+
+    .header_dropdown {
+      position: fixed;
+      right: 9%;
+      top: -1%;
+
+      button {
+        background-color: #eeeeee;
+        color: #000;
+      }
+    }
+  }
+}
+
+.dropdown-menu.show {
+  background-color: #eeeeee;
+}
+
+// header nav active
+.header_nav ul li a.active {
+  color: blue; /* Tanlangan menyu elementi rangini o'zgartirish */
+  font-weight: bold; /* Tanlangan elementni qalin qilish */
+}
+
+// header nav
+
+.header_nav {
+  padding: 10px;
+  margin-left: 10px;
+
+  ul {
+    display: flex;
+    gap: 20px;
+
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.4);
+        font-family: "Montserrat", Sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: capitalize;
+        line-height: 19px;
+        letter-spacing: -0.48px;
+
+        &.active {
+          color: #000;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+// header_drawer
+
+.header_drawer {
+  display: none;
+  position: absolute;
+  right: 2%;
+
+  @media (max-width: 765px) {
+    display: flex;
+  }
+}
+
+// animation drawer
+.animatsion_drawer .MuiDrawer-paper {
+  transition: transform 4s ease-in-out;
+}
+
+// header_nav_temporary
+.header_nav_temporary {
+  @media (max-width: 765px) {
+    display: none;
+  }
+}
+
+// drawer list
+
+.close_button {
+  .drawer_close {
+    color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+
+    .drawer_close_inline {
+      padding: 5px;
+    }
+  }
+}
+
+.drawer_nav {
+  display: none;
+
+  @media (max-width: 992px) {
+    display: flex;
+  }
+
+  ul {
+    flex-direction: column;
+
+    li {
+      text-align: center;
+
+      a {
+        font-size: 25px;
+        font-weight: 500;
+        text-transform: capitalize;
+        line-height: 50px;
+        letter-spacing: 3px;
+      }
+    }
+  }
+}
